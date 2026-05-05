@@ -1,70 +1,177 @@
-# Getting Started with Create React App
+# Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+Vogue Sphere
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Project Description
 
-### `npm test`
+VogueSphere is a web-based AI fashion platform that helps users to discover personalized outfit recommendations based on their preferences and current fashion trends. Users can receive AI-powered feedback on their looks and connect with a vibrant fashion community.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Project Objectives
 
-### `npm run build`
+* To provide AI-driven personalized outfit recommendations
+* To enhance user styling decisions through picture analysis
+* To simplify fashion browsing and outfit selection
+* To keep users updated with latest fashion trends and brand collections
+* To support product redirection to brand websites or Instagram pages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React JS
+* Tailwind CSS
+* JavaScript
+* Framer Motion
 
-### `npm run eject`
+# Backend \& Database
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Supabase
+* User Authentication (Login, Signup, Logout)
+* Real-time Database
+* Image Storage
+* Row Level Security (RLS)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Python (for AI model integration)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* AI \& ML Libraries
+* YOLO (You Only Look Once): for image detection \& validation
+* CLIP (Contrastive Language–Image Pre-training): for similarity matching between user images and outfit images
+* Transformers: used for AI feedback generation, text understanding, and fashion-related advice through the chatbot.
+* Selenium: Used to automate browser interactions and load dynamic content from fashion brand websites or social media pages for data extraction(optional future enhancement).
+* BeautifulSoup: used for structured web scraping and extracting outfit images or brand information (if API is not available).
+* Pillow (PIL) : used for image preprocessing, resizing, cropping, and format handling before passing images to YOLO/CLIP.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Key Features
 
-## Learn More
+* User Authentication (Signup, Login, Logout)
+* Fashion Trend Feed (web scraping)
+* Product Redirection to Brand Websites
+* Style, Color, Body Type \& Climate-Based Filtering
+* Picture-Based Outfit Feedback
+* Personalized Outfit Recommendation Quiz
+* Community Interaction (Likes, Comments \& Shares)
+* User Profile
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# System Functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### User Registration \& Login
 
-### Making a Progressive Web App
+The user creates an account or logs into the system using secure authentication.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Explore Trending Fashion (Trendy Fit Page)
 
-### Deployment
+After logging in, the user is redirected to the Trendy Fit page, where clothing items from different brand pages are displayed together on a single screen.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This helps users quickly explore the latest trends across multiple brands.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Personalized Upload Feature
+
+The user navigates to the Upload Page to get personalized suggestions based on an uploaded picture.
+
+
+
+If the user uploads an irrelevant image (dog, scenery, objects), the system shows an error message.
+
+
+
+If the picture contains a man, the system shows an error (the current system supports women’s fashion only).
+
+
+
+If a valid picture is uploaded, the system displays visually similar outfit inspirations.
+
+### Privacy-Conscious Users – Preference Quiz Option
+
+For users who are not comfortable uploading their pictures, an alternative is provided: a Personalized Style Quiz.
+
+
+
+The quiz includes questions about body type, skin tone, and style preferences.
+
+
+
+After submitting the quiz, the user receives personalized outfit suggestions based on their responses.
+
+
+
+### AI-Based Styling Feedback
+
+Users can upload a picture to receive AI-generated styling advice, including suggestions for: Outfit improvements, Color coordination and Accessory recommendations. Also, Better styling ideas. For additional guidance, users can interact with the integrated fashion chatbot.
+
+
+
+### Fashion Community Interaction
+
+VogueSphere includes a dedicated Fashion Community where users can upload their looks.
+
+Other users can: Like posts, Comment on looks and Appreciate or suggest improvements
+
+This creates an engaging, interactive social fashion space.
+
+### User Control \& Management
+
+Users have full control over their activity: They can delete their own posts. They can delete their comments. They can update their profile anytime
+
+
+
+# UML Diagrams Included
+
+* Use Case Diagram
+* Class Diagram
+* Sequence Diagram
+* Activity Diagram
+* Entity Relationship (ER) Diagram
+
+# Recommendation Approach
+
+
+
+VogueSphere uses a content-based filtering approach, ensuring accurate and personalized outfit suggestions based on: User preferences (style, colors, body type), Uploaded picture analysis (future ML integration) , Trending brand posts.
+
+This approach enables recommendations tailored specifically to each user without needing data from other users.
+
+
+
+## Future Enhancements
+
+
+
+Integration of Machine Learning for advanced outfit analysis
+
+
+
+Virtual Try-On system (planned as future work)
+
+
+
+Mobile Application (Android/iOS)
+
+
+
+# Developed By
+
+* Areej Fatima
+* Gull Seher
+
+Final Year Project – Bachelor of Computer Science
+
+
+
+# License
+
+
+
+This project is developed purely for academic and educational use.
+
