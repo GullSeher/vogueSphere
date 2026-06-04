@@ -17,7 +17,7 @@ CORS(app)
 # =========================
 # Gemini API
 # =========================
-genai.configure(api_key="AIzaSyAxpoJDyO_QElMwQYF73ut7JRf0KzyCDhc")  
+genai.configure(api_key="replace with your API")  
 
 # =========================
 # Load Models
